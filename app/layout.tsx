@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
+import RightPanel from "@/components/RightPanel";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,9 +20,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={'${inter.className} bg-neutral-900 flex items-start justify-between'}>
         <Sidebar />
-        <main className="w-full h-full mx-2">
-          <Header/>
-          {children}
+        <main className="flex w-full h-full mx-2">
+          <div className="w-2/3">
+            <Header />
+            {children}
+          </div>
+          <div className="w-1/3 ">
+            <RightPanel />
+          </div>
         </main>
       </body>
     </html>
