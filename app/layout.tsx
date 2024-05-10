@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={'${inter.className} bg-neutral-900 flex items-center justify-between'}>
+      <body className={'${inter.className} bg-neutral-900 flex items-start justify-between'}>
         <Sidebar />
         <main className="w-full h-full">
           {children}

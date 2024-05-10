@@ -33,7 +33,7 @@ export default function Sidebar() {
     }, []);
 
     return (
-        <div className='w-[360px] min-w-[360px] min-h-screen bg-neutral-800 flex flex-col'>
+        <div className='w-[380px] min-w-[380px] min-h-screen bg-neutral-800 flex flex-col'>
             <div className="h-12 flex items-center justify-left m-2">
                 <img src='/images/logo.png' alt='Logo' width={140} height={4} />
             </div>
@@ -48,7 +48,7 @@ export default function Sidebar() {
                 <div className=" overflow-y-auto mx-2" style={{ height: remainingHeight / 2 }}>
                     <ListaTarjas />
                 </div>
-                <div className="overflow-y-auto mx-2 mt-2" style={{ height: remainingHeight / 2 }}>
+                <div className=" mx-2 mt-2" style={{ height: remainingHeight / 2 }}>
                     <TarjasFixas />
                 </div>
             </div>
