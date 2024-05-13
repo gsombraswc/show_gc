@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea"
 
 export default function TarjasFixas() {
     return (
-        <Card className='bg-neutral-700 h-full flex flex-col rounded-md border-none'>
+        <Card className='bg-neutral-700 h-full  flex flex-col rounded-md border-none'>
             <CardHeader>
                 <CardTitle className='text-lime-400 mx-2 my-1'>Lorem Ipsum</CardTitle>
                 <Separator className='bg-neutral-600'></Separator>
