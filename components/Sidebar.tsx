@@ -33,22 +33,22 @@ export default function Sidebar() {
     }, []);
 
     return (
-        <div className='w-[400px] min-w-[400px] min-h-screen bg-neutral-800 flex flex-col fixed top-0 left-0'>
+        <div className='w-[400px] min-w-[400px] min-h-screen bg-neutral-900 flex flex-col fixed top-0 left-0'>
             <div className="flex items-center justify-left m-2 p-1">
                 <img src='/images/logo.png' alt='Logo' width={140} height={4} />
             </div>
 
-            <div className="flex justify-between items-center bg-neutral-700 h-10 mb-2 px-2 gap-2">
+            <div className="flex justify-between items-center bg-neutral-700 h-10 mb-2 px-4 gap-2">
                 <Input type='text' className='w-full h-6 bg-white' />
                 <LayoutGrid strokeWidth={2} className='h-6 w-6 ml-2 mr-1 text-white' />
                 <List strokeWidth={2} className='h-6 w-6 m-1 text-white' />
             </div>
 
             <div className="grow flex flex-col mb-2">
-                <div className=" overflow-y-auto mx-2" style={{ height: remainingHeight / 2 }}>
+                <div className=" overflow-y-auto mx-4" style={{ height: remainingHeight / 2 }}>
                     <ListaTarjas />
                 </div>
-                <div className=" mx-2 mt-2" style={{ height: remainingHeight / 2 }}>
+                <div className=" mx-4 mt-2" style={{ height: remainingHeight / 2 }}>
                     <TarjasFixas />
                 </div>
             </div>

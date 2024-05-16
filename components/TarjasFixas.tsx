@@ -14,11 +14,11 @@ import { ScrollArea } from '@radix-ui/react-scroll-area';
 
 export default function TarjasFixas() {
     return (
-        <Card className='bg-neutral-700 h-full flex flex-col rounded-md border-none'>
+        <Card className='bg-neutral-800 h-full flex flex-col rounded-md border-none'>
             <CardHeader>
                 <CardTitle className='text-lime-400 mx-2 my-1 uppercase'>tarjas fixas</CardTitle>
-                <Separator className='bg-neutral-600'></Separator>
             </CardHeader>
+            <Separator className='bg-neutral-700/50 mb-3'></Separator>
             <CardContent className='grow overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-neutral-500 '>
                 <ScrollArea className='flex flex-wrap items-center gap-2'>
 
