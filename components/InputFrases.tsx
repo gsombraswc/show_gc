@@ -24,11 +24,11 @@ export default function InputFrases() {
                     <Input type='text' className='w-full h-6 bg-white' />
                 </div>
                 <div className='flex justify-between items-center pb-1' >
-                    <p className='uppercase text-nowrap text-[.8rem] text-neutral-50 text-medium mr-4'>Campo 1</p>
+                    <p className='uppercase text-nowrap text-[.8rem] text-neutral-50 text-medium mr-4'>Campo 2</p>
                     <Input type='text' className='w-full h-6 bg-white' />
                 </div>
                 <div className='flex justify-between items-center pb-1' >
-                    <p className='uppercase text-nowrap text-[.8rem] text-neutral-50 text-medium mr-4'>Campo 1</p>
+                    <p className='uppercase text-nowrap text-[.8rem] text-neutral-50 text-medium mr-4'>Campo 3</p>
                     <Input type='text' className='w-full h-6 bg-white' />
                 </div>
 
