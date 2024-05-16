@@ -33,6 +33,41 @@
       --ring: 0 0% 3.9%;
 
       --radius: 0.5rem;
+      
+      ::-webkit-scrollbar {
+        background-color: transparent;
+        width: 5px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: grey;
+        border-radius: 5px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: grey;
+      }
+      
+      /* Estilização da barra de rolagem para navegadores Firefox */
+      
+      
+      /* Estilização da barra de rolagem para navegadores Internet Explorer/Edge */
+      ::-ms-scrollbar {
+        width: 5px;
+      }
+      
+      ::-ms-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      ::-ms-scrollbar-thumb {
+        background-color: grey;
+        border-radius: 5px;
+      }
     }
 
     .dark {
@@ -72,5 +107,6 @@
     }
     body {
       @apply bg-background text-foreground;
+      
     }
   }
