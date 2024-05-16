@@ -16,10 +16,10 @@ export default function TarjasFixas() {
     return (
         <Card className='bg-neutral-700 h-full flex flex-col rounded-md border-none'>
             <CardHeader>
-                <CardTitle className='text-lime-400 mx-2 my-1'>Lorem Ipsum</CardTitle>
+                <CardTitle className='text-lime-400 mx-2 my-1 uppercase'>tarjas fixas</CardTitle>
                 <Separator className='bg-neutral-600'></Separator>
             </CardHeader>
-            <CardContent className='grow overflow-y-auto '>
+            <CardContent className='grow overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-neutral-500 '>
                 <ScrollArea className='flex flex-wrap items-center gap-2'>
 
                         <div className='flex flex-col w-1/2 bg-neutral-50 max-w-[45%] rounded-sm ml-2'>
@@ -47,11 +47,11 @@ export default function TarjasFixas() {
                 </ScrollArea>
             </CardContent>
             <CardFooter className='flex justify-between items-center p-2'>
-                <CirclePlus strokeWidth={2} className='text-white' />
-                <Trash2 strokeWidth={2} className='text-white' />
-                <Eye strokeWidth={2} className='text-white' />
-                <CirclePlay strokeWidth={2} className='text-white' />
-                <CircleStop strokeWidth={2} className='text-white' />
+                <CirclePlus strokeWidth={2} className='text-white hover:text-lime-300 active:text-lime-500' />
+                <Trash2 strokeWidth={2} className='text-white hover:text-lime-300 active:text-lime-500' />
+                <Eye strokeWidth={2} className='text-white hover:text-lime-300 active:text-lime-500' />
+                <CirclePlay strokeWidth={2} className='text-white hover:text-lime-300 active:text-lime-500' />
+                <CircleStop strokeWidth={2} className='text-white hover:text-lime-300 active:text-lime-500' />
             </CardFooter>
         </Card>
     )

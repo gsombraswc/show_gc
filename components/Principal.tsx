@@ -5,18 +5,42 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Separator } from "@radix-ui/react-separator";
 import { Badge } from "./ui/badge";
+import Notification from "./ui/notification";
+import { FaPlayCircle } from "react-icons/fa";
 
 import Image from 'next/image';
 
 export default function Principal() {
+    const handleNotificationClick = (event: { stopPropagation: () => void; }) => {
+        event.stopPropagation();
+        // Adicione aqui o código que você quer executar quando o Notification for clicado
+    };
+
+    const handlePlayCircleClick = (event: { stopPropagation: () => void; }) => {
+        event.stopPropagation(); 
+        // Adicione aqui o código que você quer executar quando o PlayCircle for clicado
+    };
+
     return (
         <>
             <h1 className="text-[1.8rem] text-neutral-50 uppercase p-4"> Bloco 1</h1>
             <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                    <AccordionTrigger className="">Lorem Ipsum</AccordionTrigger>
+                    <AccordionTrigger className="flex items-center">
+                        <div>
+                            Lorem Ipsum
+                        </div>
+                        <div className="flex items-center gap-3 flex-grow justify-end">
+                            <div onClick={handleNotificationClick}>
+                                <Notification contentCount={2} />
+                            </div>
+                            <div onClick={handlePlayCircleClick}>
+                                <FaPlayCircle className="h-8 w-8 hover:text-lime-300 active:text-lime-500" />
+                            </div>
+                        </div>
+                    </AccordionTrigger>
+
                     <AccordionContent className="flex items-center overflow-x-hidden text-wrap">
                         <div className="flex items-center">
                             <Image
@@ -41,8 +65,8 @@ export default function Principal() {
                             </Badge>
                         </div>
                     </AccordionContent>
-                    
-                    <AccordionContent className="flex items-center p-1 overflow-x-hidden text-wrap ">
+
+                    <AccordionContent className="flex items-center overflow-x-hidden text-wrap">
                         <div className="flex items-center">
                             <Image
                                 alt='Image'
@@ -60,24 +84,11 @@ export default function Principal() {
                                 </h2>
                             </div>
                         </div>
-                        <div className="flex flex-grow justify-end rounded-md p-1">
+                        <div className="flex flex-grow justify-end rounded-md">
                             <Badge>
                                 frase atualizada
                             </Badge>
                         </div>
-                    </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-2">
-                    <AccordionTrigger>Lorem Ipsum</AccordionTrigger>
-                    <AccordionContent>
-                        Lorem Ipsum Dolor Sit Amet
-                    </AccordionContent>
-                    
-                </AccordionItem>
-                <AccordionItem value="item-3">
-                    <AccordionTrigger>Lorem Ipsum</AccordionTrigger>
-                    <AccordionContent>
-                        Lorem Ipsum Dolor Sit Amet
                     </AccordionContent>
                 </AccordionItem>
             </Accordion>

@@ -12,18 +12,18 @@ import {
 
 export default function InputFrases() {
     return (
-        <Card className='bg-neutral-700 h-full flex flex-col rounded-md border-none'>
+        <Card className='bg-neutral-700 h-full flex flex-col gap-2 rounded-md border-none'>
             <CardHeader>
-                <CardTitle className='text-lime-400 mx-2 my-1'>Lorem Ipsum</CardTitle>
+                <CardTitle className='text-lime-400 mx-2 my-1 uppercase'>Lorem Ipsum</CardTitle>
                 <Separator className='bg-neutral-600'></Separator>
             </CardHeader>
             <CardContent className='grow overflow-y-auto '>
                 
-                <div className='flex justify-between items-center pb-1' >
+                <div className='flex justify-between items-center pb-2' >
                     <p className='uppercase text-nowrap text-[.8rem] text-neutral-50 text-medium mr-4'>Campo 1</p>
                     <Input type='text' className='w-full h-6 bg-white' />
                 </div>
-                <div className='flex justify-between items-center pb-1' >
+                <div className='flex justify-between items-center pb-2' >
                     <p className='uppercase text-nowrap text-[.8rem] text-neutral-50 text-medium mr-4'>Campo 2</p>
                     <Input type='text' className='w-full h-6 bg-white' />
                 </div>
@@ -34,10 +34,10 @@ export default function InputFrases() {
 
             </CardContent>
             <CardFooter className='flex justify-between items-center p-2'>
-                <Eye strokeWidth={2} className='text-white' />
-                <LogIn strokeWidth={2} className='text-white' />
-                <RefreshCcw strokeWidth={2} className='text-white' />
-                <LogOut strokeWidth={2} className='text-white' />
+                <Eye strokeWidth={2} className='text-white hover:text-lime-300 active:text-lime-500' />
+                <LogIn strokeWidth={2} className='text-white hover:text-lime-300 active:text-lime-500' />
+                <RefreshCcw strokeWidth={2} className='text-white hover:text-lime-300 active:text-lime-500' />
+                <LogOut strokeWidth={2} className='text-white hover:text-lime-300 active:text-lime-500' />
             </CardFooter>
         </Card>
     );

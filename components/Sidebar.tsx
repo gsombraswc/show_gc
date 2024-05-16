@@ -33,7 +33,7 @@ export default function Sidebar() {
     }, []);
 
     return (
-        <div className='w-[360px] min-w-[360px] min-h-screen bg-neutral-800 flex flex-col fixed top-0 left-0'>
+        <div className='w-[400px] min-w-[400px] min-h-screen bg-neutral-800 flex flex-col fixed top-0 left-0'>
             <div className="flex items-center justify-left m-2 p-1">
                 <img src='/images/logo.png' alt='Logo' width={140} height={4} />
             </div>

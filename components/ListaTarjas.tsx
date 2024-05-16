@@ -12,7 +12,7 @@ export default function ListaTarjas() {
                         height='35'
                         width='90'
                         src={''} />
-                    <CardTitle className='text-sm font-medium leading-tight  uppercase ml-1'>
+                    <CardTitle className='text-sm font-medium tracking-wide uppercase ml-1'>
                         Card Title
                     </CardTitle>
                 </CardContent>

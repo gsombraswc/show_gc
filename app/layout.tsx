@@ -22,8 +22,8 @@ export default function RootLayout({
         <div className="fixed top-0 left-0 h-full">
           <Sidebar />
         </div>
-        <main className="flex w-full h-full mx-2 ml-[368px]">
-          <div className="w-2/3">
+        <main className="flex w-full h-full mx-2 ml-[408px]">
+          <div className="w-2/3 mx-4">
             <Header />
             {children}
           </div>
