@@ -1,8 +1,8 @@
 'use client';
 import DateTime from './DateTime';
 import Preview from './Preview';
-import CaixaTextos from './CaixaTextos';
 import InputFrases from './InputFrases';
+import Cabeça from './Cabeça';
 
 export default function RightPanel() {
     return (
@@ -13,10 +13,10 @@ export default function RightPanel() {
             <Preview />
             </div>
 
-            <div className='pt-2 mt-2 h-1/3 min-h-1/3'>
-            <CaixaTextos />
+            <div className='pt-2 h-1/3 min-h-1/3'>
+            <Cabeça />
             </div>
-            <div className='pt-2 mt-2 h-1/3 min-h-1/3'>
+            <div className='pt-2 h-1/3 min-h-1/3'>
             <InputFrases />
             </div>
         </div>
