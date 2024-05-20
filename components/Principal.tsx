@@ -14,12 +14,12 @@ import Image from 'next/image';
 export default function Principal() {
     const handleNotificationClick = (event: { stopPropagation: () => void; }) => {
         event.stopPropagation();
-        // Adicione aqui o código que você quer executar quando o Notification for clicado
+        
     };
 
     const handlePlayCircleClick = (event: { stopPropagation: () => void; }) => {
         event.stopPropagation(); 
-        // Adicione aqui o código que você quer executar quando o PlayCircle for clicado
+        
     };
 
     return (
