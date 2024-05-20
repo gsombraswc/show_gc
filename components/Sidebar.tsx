@@ -39,8 +39,9 @@ export default function Sidebar() {
                 <Image src='/images/logo.png' alt='Logo' width={140} height={4} />
             </div>
 
-            <div className="flex justify-between items-center bg-neutral-700 h-10 mb-2 px-4 gap-2">
-                <Input type='text' className='w-full h-6 bg-white' />
+            <div className="flex justify-between items-center bg-neutral-700 h-12 mb-2 px-2 gap-2">
+                <Input id="folder" type="file" className='border-none mt-1 file:bg-neutral-200 file:rounded-full'
+                multiple={true}/>
                 <LayoutGrid strokeWidth={2} className='h-6 w-6 ml-2 mr-1 text-white hover:text-lime-300 active:text-lime-500' />
                 <List strokeWidth={2} className='h-6 w-6 m-1 text-white hover:text-lime-300 active:text-lime-500' />
             </div>
